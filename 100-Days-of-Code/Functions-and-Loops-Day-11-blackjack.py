@@ -86,7 +86,7 @@ def play_game():
         if user_score == 0 or computer_score == 0 or user_score > 21:
             is_game_over = True
     
-    #If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
+#If the game has not ended, ask the user if they want to draw another card. If yes, then use the deal_card() function to add another card to the user_cards List. If no, then the game has ended.
     
         else:
             user_should_deal = input("Type 'y' to get another card, type 'n' to pass: ").lower()
@@ -95,9 +95,8 @@ def play_game():
             else:
                 is_game_over = True
     
-    #The score will need to be rechecked with every new card drawn and the checks in Hint 9 need to be repeated until the game ends.
-    
-    #Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
+#The score will need to be rechecked with every new card drawn and the checks in Hint 9 need to be repeated until the game ends.
+#Once the user is done, it's time to let the computer play. The computer should keep drawing cards as long as it has a score less than 17.
     
     while computer_score != 0 and computer_score < 17:
         computer_cards.append(deal_card())
